@@ -17,7 +17,7 @@ class Book {
     public function cardPrinter() {
         $poster = $this->cover;
         $title = $this->title;
-        // $plot = substr($this->plot, 0, 150) . "...";
+        $plot = substr($this->plot, 0, 150) . "...";
         $types = $this->type;
         $authors = $this->authors;
         //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
