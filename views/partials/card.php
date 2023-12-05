@@ -11,20 +11,46 @@
             <h5 class="card-title">
                 <?= $title ?>
             </h5>
-            <p class="card-text">
-                <?= $plot ?>
-            </p>
+            <?php if(isset($plot)) { ?>
+                <p class="card-text">
+                    <?= $plot ?>
+                </p>
+            <?php } ?>
             <div class="d-flex justify-content-between align-items-baseline">
-                <?= $genre ?>
-                <?= $rate ?>
-                <div style="width: 50px" class="rounded-3 overflow-hidden ">
-                    <img class="w-100" src="<?= $flag ?>" alt="flag">
-                </div>
+                <?php if(isset($genre)) { ?>
+                    <div class="card-text">
+                        <?= $plot ?>
+                    </div>
+                <?php } ?>
+                <?php if(isset($rate)) { ?>
+                    <div class="card-text">
+                        <?= $rate ?>
+                    </div>
+                <?php } ?>
+                <?php if(isset($flag)) { ?>
+                    <div style="width: 50px" class="rounded-3 overflow-hidden ">
+                        <img class="w-100" src="<?= $flag ?>" alt="flag">
+                    </div>
+                <?php } ?>
+                <?php if(isset($types)) { ?>
+                    <div>
+                        <?php foreach ($types as $type) {
+                            echo $type;
+                        } ?>
+                    </div>
+                <?php } ?>
+                <?php if(isset($authors)) { ?>
+                    <div>
+                        <?php foreach ($authors as $author) {
+                            echo $author;
+                        } ?>
+                    </div>
+                <?php } ?>
             </div>
-            <div>
+            <!-- <div>
                 price:<?= $price ?> $
                 available:<?= $quantity ?>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
