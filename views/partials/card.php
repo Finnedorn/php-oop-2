@@ -4,7 +4,7 @@
 
 <div class="col-12 col-md-4 col-lg-3 my-3">
     <div class="card">
-        <div style="height: 450px" class=" overflow-hidden ">
+        <div style="max-height: 450px" class=" overflow-hidden ">
             <img src="<?= $poster ?>" class="card-img-top w-100  my-ratio" alt="<?= $title ?>">
         </div>
         <div class="card-body">
@@ -19,7 +19,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
                 <?php if(isset($genre)) { ?>
                     <div class="card-text">
-                        <?= $plot ?>
+                        <?= $genre ?>
                     </div>
                 <?php } ?>
                 <?php if(isset($rate)) { ?>
@@ -47,10 +47,16 @@
                     </div>
                 <?php } ?>
             </div>
-            <!-- <div>
-                price:<?= $price ?> $
-                available:<?= $quantity ?>
-            </div> -->
+            <div>
+                <?php if(isset($price) && isset($quantity)) { ?>
+                    <div>
+                        <?= $price ?>
+                    </div>
+                    <div>
+                        <?= $quantity ?>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </div>

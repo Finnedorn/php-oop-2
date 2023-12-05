@@ -1,0 +1,8 @@
+.bg-my-purple {
+    background-color: #131a7c;
+}
+
+a.nav-link:hover {
+    transform: translateY(-0.5rem);
+    transition: all 0.5s;
+}

@@ -16,12 +16,37 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1>
-                OOP 
-            </h1>
-            <a href="books.php">Books</a>
-            <a href="games.php">Games</a>
-            <a href="index.php">Movies</a>
+        <div class="container-fluid bg-my-purple">
+            <div class="container py-3 px-4 mb-4">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="logo-wrapper d-flex me-3 align-items-center">
+                        <div style="width: 50px">
+                            <img class="w-100" src="img/icons8-microsoft-todo-2019-144.png" alt="logo">
+                        </div>
+                        <h1 class="text-light ms-2">
+                            Shop
+                        </h1>
+                    </div>
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item fs-4 ">
+                            <a class="nav-link active text-light " aria-current="page" href="books.php">Book</a>
+                            </li>
+                            <li class="nav-item fs-4">
+                            <a class="nav-link active text-light " aria-current="page" href="games.php">Games</a>
+                            </li>
+                            <li class="nav-item fs-4">
+                            <a class="nav-link active text-light " aria-current="page" href="index.php">Movies</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
         </div>
     </header>

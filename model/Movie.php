@@ -30,17 +30,26 @@ class Movie extends Product {
     //creo una funzione che mi associ ad ogni variabile della card un valore di variabile di movie
     //in questo caso la funzione è pubblica perchè la richiamo da fuori in index per stampare la card
     public function cardPrinter() {
-        $this->setDiscount($this->title);
+        // $this->setDiscount($this->title);
         $poster = $this->poster_path;
         $title = $this->title;
-        $plot = substr($this->overview, 0, 150) . "...";
+        $plot = substr($this->overview, 0, 100) . "...";
         $rate = $this->starPrinter();
         $flag = $this->flagPrinter();
         $genre = $this->genre;
-        $price = $this->price;
-        $quantity= $this->quantity;
+        $price = $this->drawBadge($this->price);
+        $quantity= $this->drawBadge($this->quantity);
         //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
         include __DIR__ ."/../views/partials/card.php";
+    }
+
+    public function drawBadge($el) {
+        if ($el == $this->price) {
+            $template = "<span class='badge text-bg-success me-2'>price: $el$</span>";
+        } elseif ($el == $this->quantity) {
+            $template = "<span class='badge text-bg-primary me-2'>available: $el</span>";
+        }
+        return $template;
     }
 
     //creo una funzione che stampi le stelle al posto del valore 
@@ -108,10 +117,6 @@ class Movie extends Product {
 
 //adesso richiamare la classe da fuori altrimenti non avrò modo di farla funzionare, essendo fetchall una funzione statica essa non necessita di essere associata ad una variabile, a cose normali per portare fuori una classe avrei dovuto associarla ad una variabile e con valori associabili agli elementi del costruttore!
 Movie::fetchAll();
-
-
-
-
 
 
 // //ciclo sugli el in array associandolo alla classe new Movie prendendo le info che mi servono ed associandole alle variabili in array della funzione costruttore all'interno della classe

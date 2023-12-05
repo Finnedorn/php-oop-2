@@ -1,8 +1,10 @@
 <?php
-class Game {
+include __DIR__ ."/Product.php";
+class Game extends Product {
     public $name;
     public $cover;
-    function __construct($name, $cover) {
+    function __construct($name, $cover, $price, $quantity) {
+        parent::__construct($price, $quantity);
         $this->name = $name;
         $this->cover = $cover;
     }
@@ -10,8 +12,19 @@ class Game {
     public function cardPrinter() {
         $poster = $this->cover;
         $title = $this->name;
+        $price = $this->drawBadge($this->price);
+        $quantity= $this->drawBadge($this->quantity);
         //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
-        include __DIR__ ."/../views/partials/gamecard.php";
+        include __DIR__ ."/../views/partials/card.php";
+    }
+
+    public function drawBadge($el) {
+        if ($el == $this->price) {
+            $template = "<span class='badge text-bg-success me-2'>price: $el$</span>";
+        } elseif ($el == $this->quantity) {
+            $template = "<span class='badge text-bg-primary me-2'>available: $el</span>";
+        }
+        return $template;
     }
 
 
@@ -23,7 +36,9 @@ class Game {
         $games = [];
 
         foreach ($gameInfoList as $info) {
-            $games[] = new Game ($info['name'], $info['img_icon_url']);
+            $quantity= rand(0, 50);
+            $price= rand(10,50);
+            $games[] = new Game ($info['name'], $info['img_icon_url'], $price, $quantity);
         }
         return $games;
     }

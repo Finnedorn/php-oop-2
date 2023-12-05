@@ -7,9 +7,10 @@ class Genre {
         $this->name = $name;
     }
 
-    // public function drawGenre() {
-    //     return "<span class='badge text-bg-primary me-2'>$this->name</span>";
-    // }
+    public function drawBadge($el) {
+        $template = "<span class='badge text-bg-primary me-2'>$el</span>";
+        return $template;
+    }
     
     //porto tutto dentro ad una funzione statica, un parametro statico permette all'elemento di avere sempre quel valore a prescindere dai fattori esterni ma va richiamata in un modo tutto suo
     public static function fetchAll() {

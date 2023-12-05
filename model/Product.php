@@ -13,10 +13,10 @@ class Product  {
         $this->quantity = $quantity;
     }
 
-    public function setDiscount($title) {
-        if($title == 'Gunfight at Rio Bravo') {
-            return $this->discount = 20;
-        }
-    }
+    // public function setDiscount($title) {
+    //     if($title == 'Gunfight at Rio Bravo') {
+    //         return $this->discount = 20;
+    //     }
+    // }
     
 }
