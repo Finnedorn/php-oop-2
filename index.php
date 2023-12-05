@@ -6,14 +6,16 @@ include __DIR__."/model/Movie.php";
 $movies = Movie::fetchAll();
 ?>
     <main>
-        <div class="container">
-            <h2>
-                Movies
-            </h2>
-            <div class="row">
-                <?php foreach ($movies as $movie) {
-                    echo $movie->cardPrinter();
-                } ?>
+        <div class="container-fluid bg-secondary pt-5">
+            <div class="container bg-dark rounded-4 p-3 ">
+                <h2 class="ms-3 pb-4 text-light">
+                    Movies
+                </h2>
+                <div class="row px-5 pt-2 ">
+                    <?php foreach ($movies as $movie) {
+                        echo $movie->cardPrinter();
+                    } ?>
+                </div>
             </div>
         </div>
     </main>

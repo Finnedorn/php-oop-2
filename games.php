@@ -6,14 +6,16 @@ include __DIR__."/model/Game.php";
 $games = Game::fetchAll();
 ?>
     <main>
-        <div class="container">
-            <h2>
-                Games
-            </h2>
-            <div class="row">
-                <?php foreach ($games as $game) {
-                    echo $game->cardPrinter();
-                } ?>
+        <div class="container-fluid bg-secondary pt-5">
+            <div class="container bg-dark rounded-4 p-3">
+                <h2 class="ms-3 pb-4 text-light">
+                    Games
+                </h2>
+                <div class="row px-5 pt-2">
+                    <?php foreach ($games as $game) {
+                        echo $game->cardPrinter();
+                    } ?>
+                </div>
             </div>
         </div>
     </main>

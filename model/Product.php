@@ -13,6 +13,12 @@ class Product  {
         $this->quantity = $quantity;
     }
 
+    // public static function getPriceandQuantity() {
+    //     $quantity= rand(0, 50);
+    //     $price= rand(10,50);
+    //     return new self($price, $quantity);
+    // }
+
     // public function setDiscount($title) {
     //     if($title == 'Gunfight at Rio Bravo') {
     //         return $this->discount = 20;

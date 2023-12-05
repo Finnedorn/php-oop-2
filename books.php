@@ -6,12 +6,12 @@ include __DIR__."/model/Book.php";
 $books = Book::fetchAll();
 ?>
     <main>
-        <div class="container-fluid">
-            <div class="container">
-                <h2>
+        <div class="container-fluid bg-secondary pt-5">
+            <div class="container bg-dark rounded-4 p-3">
+                <h2 class="ms-3 pb-4 text-light">
                     Books
                 </h2>
-                <div class="row">
+                <div class="row px-5 pt-2">
                     <?php foreach ($books as $book) {
                         echo $book->cardPrinter();
                     } ?>

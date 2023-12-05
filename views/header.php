@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container-fluid bg-my-purple">
-            <div class="container py-3 px-4 mb-4">
+            <div class="container py-3 px-4">
                 <nav class="navbar navbar-expand-lg">
                     <div class="logo-wrapper d-flex me-3 align-items-center">
                         <div style="width: 50px">
