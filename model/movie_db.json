@@ -1,0 +1,393 @@
+[
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/wVTvfxz53pDqrIvbrxhVdKcLhip.jpg",
+        "genre_ids": [
+            28,
+            12,
+            878,
+            53
+        ],
+        "id": 9381,
+        "original_language": "en",
+        "original_title": "Babylon A.D.",
+        "overview": "A veteran-turned-mercenary is hired to take a young woman with a secret from post-apocalyptic Eastern Europe to New York City.",
+        "popularity": 199.314,
+        "poster_path": "https://image.tmdb.org/t/p/w342/kt9nqD0uOar8IVE9191HXhWOXKI.jpg",
+        "release_date": "2008-08-20",
+        "title": "Babylon A.D.",
+        "video": false,
+        "vote_average": 5.601,
+        "vote_count": 1906
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/5Di2tovzn8lnXWxigV6xm7yrL24.jpg",
+        "genre_ids": [
+            16,
+            12,
+            28,
+            14,
+            10751
+        ],
+        "id": 1147400,
+        "original_language": "fr",
+        "original_title": "Miraculous World : Paris, Les Aventures de Toxinelle et Griffe Noire",
+        "overview": "Miraculous holders from another world appear in Paris. They come from a parallel universe where everything is reversed: the holders of Ladybug and Black Cat Miraculouses, Shadybug and Claw Noir, are the bad guys, and the holder of the Butterfly Miraculous, Hesperia, is a superhero. Ladybug and Cat Noir will have to help Hesperia counter the attacks of their evil doubles and prevent them from seizing the Butterfly's Miraculous. Can our heroes also help Hesperia make Shadybug and Claw Noir better people?",
+        "popularity": 78.837,
+        "poster_path": "https://image.tmdb.org/t/p/w342/A46SghdyD9y7qQUxB5zOslospJ7.jpg",
+        "release_date": "2023-10-21",
+        "title": "Miraculous World: Paris, Tales of Shadybug and Claw Noir",
+        "video": false,
+        "vote_average": 6.935,
+        "vote_count": 62
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg",
+        "genre_ids": [
+            27,
+            9648
+        ],
+        "id": 507089,
+        "original_language": "en",
+        "original_title": "Five Nights at Freddy's",
+        "overview": "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
+        "popularity": 759.232,
+        "poster_path": "https://image.tmdb.org/t/p/w342/j9mH1pr3IahtraTWxVEMANmPSGR.jpg",
+        "release_date": "2023-10-25",
+        "title": "Five Nights at Freddy's",
+        "video": false,
+        "vote_average": 7.8,
+        "vote_count": 2619
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/6tCTR5Gr91Kocrt0goLrpFs1tqh.jpg",
+        "genre_ids": [
+            18
+        ],
+        "id": 833326,
+        "original_language": "fr",
+        "original_title": "Rien à foutre",
+        "overview": "Cassandre, 26, is a flight attendant for a low-cost airline. Based in Lanzarote, she’s always willing to take on extra hours and carries out her duties with robotic efficiency. On the side, she just goes with the flow and floats between Tinder, parties and lazy days. When she suddenly gets dismissed, she is forced to return home.",
+        "popularity": 257.363,
+        "poster_path": "https://image.tmdb.org/t/p/w342/wLZ5jijVpOxHuBLmsICKLXwlldu.jpg",
+        "release_date": "2022-03-02",
+        "title": "Zero Fucks Given",
+        "video": false,
+        "vote_average": 6.417,
+        "vote_count": 306
+    },
+    {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+            18,
+            10402
+        ],
+        "id": 461191,
+        "original_language": "en",
+        "original_title": "A",
+        "overview": "A young alcoholic ambient musician locks himself in his apartment on a dangerous seven day bender as he attempts to finish his upcoming album.",
+        "popularity": 3.7,
+        "poster_path": "https://image.tmdb.org/t/p/w342/4uOKZzRB615cIxcVi31pcsdFtSS.jpg",
+        "release_date": "2017-09-13",
+        "title": "A",
+        "video": false,
+        "vote_average": 7.19,
+        "vote_count": 58
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/ltpW5exyTdqL5twV8zRMajf1VgU.jpg",
+        "genre_ids": [
+            99
+        ],
+        "id": 24791,
+        "original_language": "ja",
+        "original_title": "A",
+        "overview": "Roughly chronological, from 3/96 to 11/96, with a coda in spring of 1997: inside compounds of Aum Shinrikyo, a Buddhist sect led by Shoko Asahara. (Members confessed to a murderous sarin attack in the Tokyo subway in 1995.) We see what they eat, where they sleep, and how they respond to media scrutiny, on-going trials, the shrinking of their fortunes, and the criticism of society. Central focus is placed on Hiroshi Araki, a young man who finds himself elevated to chief spokesman for Aum after its leaders are arrested. Araki faces extreme hostility from the Japanese public, who find it hard to believe that most followers of the cult had no idea of the attacks and even harder to understand why these followers remain devoted to the religion, if not the violence.",
+        "popularity": 4.073,
+        "poster_path": "https://image.tmdb.org/t/p/w342/dBLzrfh5DtxJey1hOYZaN2drPe3.jpg",
+        "release_date": "1998-09-09",
+        "title": "A",
+        "video": false,
+        "vote_average": 6.189,
+        "vote_count": 53
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/A1g8AvP3KpDyu0iyjS6roRxK77v.jpg",
+        "genre_ids": [
+            53,
+            80
+        ],
+        "id": 978870,
+        "original_language": "it",
+        "original_title": "L'ultima notte di Amore",
+        "overview": "On the night before his retirement, police lieutenant Franco Amore is called to investigate the death of a long-time partner of his in a diamond heist in which he was involved.",
+        "popularity": 147.052,
+        "poster_path": "https://image.tmdb.org/t/p/w342/dBp0REsZkZ1HK1PycwlLdBtYdsd.jpg",
+        "release_date": "2023-03-09",
+        "title": "Last Night of Amore",
+        "video": false,
+        "vote_average": 7.22,
+        "vote_count": 296
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/kszooR7v1TLFM4pzx6IkKq2jDAN.jpg",
+        "genre_ids": [
+            18,
+            80,
+            9648
+        ],
+        "id": 915935,
+        "original_language": "fr",
+        "original_title": "Anatomie d'une chute",
+        "overview": "A woman is suspected of her husband’s murder, and their blind son faces a moral dilemma as the sole witness.",
+        "popularity": 127.384,
+        "poster_path": "https://image.tmdb.org/t/p/w342/kQs6keheMwCxJxrzV83VUwFtHkB.jpg",
+        "release_date": "2023-08-23",
+        "title": "Anatomy of a Fall",
+        "video": false,
+        "vote_average": 7.83,
+        "vote_count": 358
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/5quyXeEA6RaoTjaiypECXOKXT2o.jpg",
+        "genre_ids": [
+            35,
+            9648
+        ],
+        "id": 1179664,
+        "original_language": "es",
+        "original_title": "Invitación a un Asesinato",
+        "overview": "Eccentric millionaire Olivia sends her half sister Agatha, and a group of old acquaintances, a mysterious invitation for a weekend on her yacht, where they will discover the true motive behind this invitation: the celebration of… a murder?",
+        "popularity": 21.665,
+        "poster_path": "https://image.tmdb.org/t/p/w342/1IFdWd7ykl0yHqKid9Mm7TTIDSK.jpg",
+        "release_date": "2023-10-06",
+        "title": "A Deadly Invitation",
+        "video": false,
+        "vote_average": 5.898,
+        "vote_count": 113
+    },
+    {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+            28,
+            16
+        ],
+        "id": 116776,
+        "original_language": "ja",
+        "original_title": "ドラゴンボール 魔訶不思議大冒険",
+        "overview": "Master Roshi has succeeded at the one mission he valued most: to train Goku and Krillin to become ultimate fighters. So, he arranges for them to test their mettle at a competition hosted by Emperor Chiaotzu. Not everyone's playing by the rules, however, as a member of the ruler's household schemes to use the Dragonballs to extort money and power from the royal.",
+        "popularity": 296.151,
+        "poster_path": "https://image.tmdb.org/t/p/w342/5aXG0B3TYTpQsodXzvYCkKQfpB1.jpg",
+        "release_date": "1988-07-09",
+        "title": "Dragon Ball: Mystical Adventure",
+        "video": false,
+        "vote_average": 6.756,
+        "vote_count": 227
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+        "genre_ids": [
+            16,
+            28,
+            12,
+            878
+        ],
+        "id": 569094,
+        "original_language": "en",
+        "original_title": "Spider-Man: Across the Spider-Verse",
+        "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+        "popularity": 323.175,
+        "poster_path": "https://image.tmdb.org/t/p/w342/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "release_date": "2023-05-31",
+        "title": "Spider-Man: Across the Spider-Verse",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 5035
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/3H8u03qr9se2pCv3QTHR1gxSa9k.jpg",
+        "genre_ids": [
+            99,
+            28,
+            12
+        ],
+        "id": 1174725,
+        "original_language": "de",
+        "original_title": "Duell am Abgrund",
+        "overview": "Fearless alpine climbers Ueli Steck and Dani Arnold enter into a death-defying rivalry to set speed records on the Swiss Alps' great north faces.",
+        "popularity": 30.286,
+        "poster_path": "https://image.tmdb.org/t/p/w342/tI9ybrWLiVLljLsNoqEjQF36oG4.jpg",
+        "release_date": "2023-10-04",
+        "title": "Race to the Summit",
+        "video": false,
+        "vote_average": 6.471,
+        "vote_count": 35
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/a2K8ak4pGCHR3O0hMualcokXXpa.jpg",
+        "genre_ids": [
+            10749,
+            53
+        ],
+        "id": 210763,
+        "original_language": "kn",
+        "original_title": "A",
+        "overview": "A film director fades away from the industry after the failed love with the heroine of his movie. After being rehabilitated, he learns that some people conspired his fall and decides to take revenge.",
+        "popularity": 2.533,
+        "poster_path": "https://image.tmdb.org/t/p/w342/y3DH68oWOGMZ637tqYHfTGU4Bif.jpg",
+        "release_date": "1998-02-12",
+        "title": "A",
+        "video": false,
+        "vote_average": 6.256,
+        "vote_count": 39
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/tvLSz04uSgNyRVdLb8hJDU5uFMB.jpg",
+        "genre_ids": [
+            35,
+            80,
+            18
+        ],
+        "id": 1145810,
+        "original_language": "es",
+        "original_title": "No voy a pedirle a nadie que me crea",
+        "overview": "A writer's career — and entire life — suddenly goes off script when he falls prey to a dangerous web of criminals right before moving to Barcelona.",
+        "popularity": 81.177,
+        "poster_path": "https://image.tmdb.org/t/p/w342/5JyivjFm8WzZU2jhzjMWdbWdOwj.jpg",
+        "release_date": "2023-10-22",
+        "title": "I Don't Expect Anyone to Believe Me",
+        "video": false,
+        "vote_average": 6.0,
+        "vote_count": 4
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/x7x6NT1JcdqxK8GlAWFhm3mzHnV.jpg",
+        "genre_ids": [
+            37,
+            28
+        ],
+        "id": 835767,
+        "original_language": "en",
+        "original_title": "Gunfight at Rio Bravo",
+        "overview": "When mysterious Russian gunslinger Ivan Turchin rides into a small Texas town, he runs afoul of a bloodthirsty outlaw gang known as The Hellhounds. Outmanned and outgunned, the town must put their trust in Turchin to protect them from annihilation at the hands of the bandits. The gunslinger finds allies in the form of Marshal Austin Carter and Sheriff Vernon Kelly, and together the three must make a desperate stand against impossible and violent odds.",
+        "popularity": 139.868,
+        "poster_path": "https://image.tmdb.org/t/p/w342/92hYmHw1XpMEF7yZUzjOzcO4zmC.jpg",
+        "release_date": "2023-01-13",
+        "title": "Gunfight at Rio Bravo",
+        "video": false,
+        "vote_average": 4.3,
+        "vote_count": 15
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/uRizG2pUwHNjmTLrUvqdi3pWK1n.jpg",
+        "genre_ids": [
+            18,
+            36,
+            10752
+        ],
+        "id": 680133,
+        "original_language": "bn",
+        "original_title": "মুজিব: একটি জাতির রূপকার",
+        "overview": "Biopic on the father of the nation of Bangladesh, Sheikh Mujibur Rahman. The film will showcase his growing up as a child to his standing up against all injustice in his youth to fighting for the independence of his country. How he led a country to it's independence with his inspirational presence and fight for the justice.",
+        "popularity": 44.13,
+        "poster_path": "https://image.tmdb.org/t/p/w342/bnIJ5lK66cfnvJ0A1D6FLp4NZzJ.jpg",
+        "release_date": "2023-10-27",
+        "title": "Mujib: The Making of a Nation",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 5
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/dLfPOTB9zlGCNZJinYvf9yygaX6.jpg",
+        "genre_ids": [
+            10749,
+            35
+        ],
+        "id": 264859,
+        "original_language": "de",
+        "original_title": "Sechs Schwedinnen auf der Alm",
+        "overview": "This comedy has everyone's favorite 6 Swedish gals enjoying their stay in the alps. When the girls aren't enjoying the pleasure of their own company they're out having a good time with nearly everyone else in town.",
+        "popularity": 74.599,
+        "poster_path": "https://image.tmdb.org/t/p/w342/5kk9GUeeGTdyhcerUfxzhJYt6Gm.jpg",
+        "release_date": "1983-07-22",
+        "title": "Six Swedish Girls in Alps",
+        "video": false,
+        "vote_average": 5.897,
+        "vote_count": 39
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/8rpDcsfLJypbO6vREc0547VKqEv.jpg",
+        "genre_ids": [
+            878,
+            12,
+            28
+        ],
+        "id": 76600,
+        "original_language": "en",
+        "original_title": "Avatar: The Way of Water",
+        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+        "popularity": 336.921,
+        "poster_path": "https://image.tmdb.org/t/p/w342/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+        "release_date": "2022-12-14",
+        "title": "Avatar: The Way of Water",
+        "video": false,
+        "vote_average": 7.65,
+        "vote_count": 10266
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/nnkiORKM1Q4AU1eWULI1PiWOTLu.jpg",
+        "genre_ids": [
+            16,
+            12,
+            28
+        ],
+        "id": 1029599,
+        "original_language": "es",
+        "original_title": "Aguila y Jaguar: Los Guerreros Legendarios",
+        "overview": "In a post-apocalyptic future in which water has almost disappeared, two young survivors travel back in time to find the mythical power of the prehispanic God of water, and so be able to create the vital resource. However, when they arrive at the present they discover that the power is in the hands of an unscrupulous businessman who had always wanted to monopolize water and who knows everything about prehispanic myths. The Aztaya brotherhood, a group of heroes, successors from the legendary Aztec and Mayan warriors, will begin the adventure to prevent the villain's plan and help the travelers to change their sad future, teaming up to fight the powerful enemy and his dark allies. To win, the heroes will have to awake the greatest warriors of Aztec and Mayan mythology: The Eagle and the Jaguar.",
+        "popularity": 20.025,
+        "poster_path": "https://image.tmdb.org/t/p/w342/6qR9WbXYIddZcVk6nxFULfHcKmK.jpg",
+        "release_date": "2022-09-29",
+        "title": "Eagle and Jaguar, The Legendary Warriors",
+        "video": false,
+        "vote_average": 6.611,
+        "vote_count": 36
+    },
+    {
+        "adult": false,
+        "backdrop_path": "https://image.tmdb.org/t/p/w342/jkKVLzLWjSvTnc84VzeljhSy6j8.jpg",
+        "genre_ids": [
+            10749,
+            18
+        ],
+        "id": 820525,
+        "original_language": "en",
+        "original_title": "After Everything",
+        "overview": "Besieged by writer’s block and the crushing breakup with Tessa, Hardin travels to Portugal in search of a woman he wronged in the past – and to find himself. Hoping to win back Tessa, he realizes he needs to change his ways before he can make the ultimate commitment.",
+        "popularity": 212.149,
+        "poster_path": "https://image.tmdb.org/t/p/w342/uQxjZGU6rxSPSMeAJPJQlmfV3ys.jpg",
+        "release_date": "2023-09-13",
+        "title": "After Everything",
+        "video": false,
+        "vote_average": 7.019,
+        "vote_count": 564
+    }
+]
