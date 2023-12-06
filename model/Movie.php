@@ -3,9 +3,13 @@
 include __DIR__ ."/Genre.php";
 //importo la classe Product così da poterla rendere padre di Movie
 include __DIR__ ."/Product.php";
+
+include __DIR__ ."/../traits/DrawCard.php";
 //tramite la dicitura extends posso rendere product padre di Movie
 //essendo figlia di Product erediterà anche tutte sue le proprietà!
 class Movie extends Product {
+
+    use DrawCard;
     public $id;
     public $title;
     public $overview;
@@ -25,22 +29,46 @@ class Movie extends Product {
         $this->vote_average = $vote_average;
         $this->poster_path = $poster_path;
         $this->genre = $genre;
+        $this->discount = 0;
     }
 
     //creo una funzione che mi associ ad ogni variabile della card un valore di variabile di movie
     //in questo caso la funzione è pubblica perchè la richiamo da fuori in index per stampare la card
-    public function cardPrinter() {
+    public function formatCard() {
+
+        if(ceil($this->vote_average) < 6) {
+            try {
+                $this->setDiscount(10);
+            } catch(Exception $e) {
+                $error = "Error: " . $e->getMessage();
+            }
+        }
+
+        $cardItem= [
+            "error" => $error ?? '',
+            "poster"=> $this->poster_path,
+            "title"=> $this->title,
+            "plot" => substr($this->overview, 0, 100) . "...",
+            "rate" => $this->starPrinter(),
+            "flag" => $this->flagPrinter(),
+            "genre" => $this->genre,
+            "price" => $this->drawBadge($this->price),
+            "quantity"=> $this->drawBadge($this->quantity),
+            "discount" => $this->getDiscount()
+        ];
+        return $cardItem;
+        
         // $this->setDiscount($this->title);
-        $poster = $this->poster_path;
-        $title = $this->title;
-        $plot = substr($this->overview, 0, 100) . "...";
-        $rate = $this->starPrinter();
-        $flag = $this->flagPrinter();
-        $genre = $this->genre;
-        $price = $this->drawBadge($this->price);
-        $quantity= $this->drawBadge($this->quantity);
+        // $poster = $this->poster_path;
+        // $title = $this->title;
+        // $plot = substr($this->overview, 0, 100) . "...";
+        // $rate = $this->starPrinter();
+        // $flag = $this->flagPrinter();
+        // $genre = $this->genre;
+        // $price = $this->drawBadge($this->price);
+        // $quantity= $this->drawBadge($this->quantity);
         //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
-        include __DIR__ ."/../views/partials/card.php";
+        // include __DIR__ ."/../views/partials/card.php";
     }
 
     public function drawBadge($el) {

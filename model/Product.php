@@ -5,12 +5,24 @@ class Product  {
     //le variabili di un padre devono essere public o protected altrimenti il figlio non potrà accederci!
     //protected mi permette di accedere alle proprietà solo internamente(come il private) e dalla classe figlia!
     protected int $price;
-    private int $discount;
+    protected int $discount;
     protected int $quantity;
 
     function __construct($price, $quantity) {
         $this->price = $price;
         $this->quantity = $quantity;
+    }
+
+    public function setDiscount(int $el) {
+        if($el < 5 || $el > 90) {
+            throw new Exception("The percentage is out of range");
+        } else {
+            $this->discount = $el;
+        }
+    }
+
+    public function getDiscount() {
+        return $this->discount;
     }
 
     // public static function getPriceandQuantity() {

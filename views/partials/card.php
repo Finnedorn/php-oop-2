@@ -2,12 +2,19 @@
 
 <!-- associo delle variabili ad ogni contenuto, poi queste variabili verranno (con una funzione nella classe movie) esse stesse associate alle variabili contenenti gli elementi dell'array  -->
 
+<!-- piazzo una serie di check in modo da poter stampare con la stessa card modelli differenti di card in base alla classe da cui attingo il contenuto -->
 <div class="col-12 col-md-4 col-lg-3 my-3">
     <div class="card">
         <div style="max-height: 450px" class=" overflow-hidden ">
             <img src="<?= $poster ?>" class="card-img-top w-100  my-ratio" alt="<?= $title ?>">
         </div>
         <div class="card-body">
+            <!-- se il catch in formatCard() rileva un errore stampa questo messaggio -->
+            <?php if(isset($error) && $error) { ?>
+                <div class="alert alert-danger">
+                    <?= $error ?>
+                </div>
+            <?php } ?>
             <h5 class="card-title">
                 <?= $title ?>
             </h5>
@@ -47,10 +54,16 @@
                     </div>
                 <?php } ?>
             </div>
+            <!--price and etc -->
             <div>
                 <?php if(isset($price) && isset($quantity)) { ?>
-                    <div>
+                    <div class="mb-2">
                         <?= $price ?>
+                        <?php if($discount > 0) { ?>
+                            <div class='badge text-bg-danger me-2'>
+                                promo 50%
+                            </div>
+                        <?php } ?>
                     </div>
                     <div>
                         <?= $quantity ?>

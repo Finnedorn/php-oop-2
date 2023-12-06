@@ -1,6 +1,9 @@
 <?php
 include __DIR__ ."/Product.php";
+include __DIR__ ."/../traits/DrawCard.php";
 class Book extends Product {
+    
+    use DrawCard;
     public $title;
     public $cover;
     public $plot = [];
@@ -17,16 +20,26 @@ class Book extends Product {
 
     }
 
-    public function cardPrinter() {
-        $poster = $this->cover;
-        $title = $this->title;
-        $plot = substr($this->plot, 0, 150) . "...";
-        $types = $this->type;
-        $authors = $this->authors;
-        $price = $this->drawBadge($this->price);
-        $quantity= $this->drawBadge($this->quantity);
+    public function formatCard() {
+        $cardItem = [
+            "poster" => $this->cover,
+            "title" => $this->title,
+            "plot" => substr($this->plot, 0, 150) . "...",
+            "types" => $this->type,
+            "authors" => $this->authors,
+            "price" => $this->drawBadge($this->price),
+            "quantity" => $this->drawBadge($this->quantity)
+        ];
+        return $cardItem;
+        // $poster = $this->cover;
+        // $title = $this->title;
+        // $plot = substr($this->plot, 0, 150) . "...";
+        // $types = $this->type;
+        // $authors = $this->authors;
+        // $price = $this->drawBadge($this->price);
+        // $quantity= $this->drawBadge($this->quantity);
         //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
-        include __DIR__ ."/../views/partials/card.php";
+        // include __DIR__ ."/../views/partials/card.php";
     }
 
     public function drawBadge($el) {

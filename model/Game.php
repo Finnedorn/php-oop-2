@@ -1,6 +1,8 @@
 <?php
 include __DIR__ ."/Product.php";
+include __DIR__ ."/../traits/DrawCard.php";
 class Game extends Product {
+    use DrawCard;
     public $name;
     public $cover;
     function __construct($name, $cover, $price, $quantity) {
@@ -9,13 +11,21 @@ class Game extends Product {
         $this->cover = $cover;
     }
 
-    public function cardPrinter() {
-        $poster = $this->cover;
-        $title = $this->name;
-        $price = $this->drawBadge($this->price);
-        $quantity= $this->drawBadge($this->quantity);
-        //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
-        include __DIR__ ."/../views/partials/card.php";
+    public function formatCard() {
+        $cardItem = [
+            "poster" => $this->cover,
+            "title" => $this->name,
+            "price" => $this->drawBadge($this->price),
+            "quantity"=> $this->drawBadge($this->quantity),
+        ];
+        return $cardItem;
+
+        // $poster = $this->cover;
+        // $title = $this->name;
+        // $price = $this->drawBadge($this->price);
+        // $quantity= $this->drawBadge($this->quantity);
+        // //includo la card altrimenti non riuscirei ad associare effettivamente le variabili
+        // include __DIR__ ."/../views/partials/card.php";
     }
 
     public function drawBadge($el) {
