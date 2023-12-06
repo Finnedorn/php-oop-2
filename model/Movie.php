@@ -36,14 +36,22 @@ class Movie extends Product {
     //in questo caso la funzione è pubblica perchè la richiamo da fuori in index per stampare la card
     public function formatCard() {
 
+        //metto un check, che mi attivi una funzione dichiarata in Product:
+        //se il vote_average dell'elemento stampato in card dalla lista $movies è sotto un tot...
         if(ceil($this->vote_average) < 6) {
+            //try and catch mi permettono di detectare un errore e stamparmelo
+            //try esegue una azione 
+            //catch accoglie eventuali errori che si verificano ed agisce di conseguenza 
+            //in questo caso catch mi riporta un messaggio di errore
             try {
                 $this->setDiscount(10);
             } catch(Exception $e) {
                 $error = "Error: " . $e->getMessage();
             }
         }
-
+        //rielaboro la funzione formatCard
+        //avendo aggiunto un tratto comune (DrawCard) che accoglie un solo elemento
+        //dovrò ridurre tutte le mie variabili associate in un unico array associativo
         $cardItem= [
             "error" => $error ?? '',
             "poster"=> $this->poster_path,
@@ -58,6 +66,8 @@ class Movie extends Product {
         ];
         return $cardItem;
         
+        //la vecchia funzione formatCard:
+
         // $this->setDiscount($this->title);
         // $poster = $this->poster_path;
         // $title = $this->title;

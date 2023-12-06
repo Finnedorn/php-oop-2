@@ -9,6 +9,7 @@ class Book extends Product {
     public $plot = [];
     public $type = [];
     public $authors = [];
+    public $vote_average;
 
     function __construct($title, $cover, $plot, $type, $authors, $price, $quantity) {
         parent::__construct($price, $quantity);
@@ -17,10 +18,20 @@ class Book extends Product {
         $this->plot = $plot;
         $this->type = $type;
         $this->authors = $authors;
-
+        $this->vote_average = rand(0,10);
+        $this->discount = 0;
     }
 
     public function formatCard() {
+
+        if(ceil($this->vote_average) < 6) {
+            try {
+                $this->setDiscount(10);
+            } catch(Exception $e) {
+                $error = "Error: " . $e->getMessage();
+            }
+        }
+
         $cardItem = [
             "poster" => $this->cover,
             "title" => $this->title,
@@ -28,7 +39,8 @@ class Book extends Product {
             "types" => $this->type,
             "authors" => $this->authors,
             "price" => $this->drawBadge($this->price),
-            "quantity" => $this->drawBadge($this->quantity)
+            "quantity" => $this->drawBadge($this->quantity),
+            "discount" => $this->getDiscount()
         ];
         return $cardItem;
         // $poster = $this->cover;

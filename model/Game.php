@@ -5,18 +5,33 @@ class Game extends Product {
     use DrawCard;
     public $name;
     public $cover;
+    public $vote_average;
+    
     function __construct($name, $cover, $price, $quantity) {
         parent::__construct($price, $quantity);
         $this->name = $name;
         $this->cover = $cover;
+        $this->vote_average = rand(0,10);
+        $this->discount = 0;
     }
 
     public function formatCard() {
+
+        if(ceil($this->vote_average) < 6) {
+            try {
+                $this->setDiscount(10);
+            } catch(Exception $e) {
+                $error = "Error: " . $e->getMessage();
+            }
+        }
+
         $cardItem = [
+            "error" => $error ?? '',
             "poster" => $this->cover,
             "title" => $this->name,
             "price" => $this->drawBadge($this->price),
             "quantity"=> $this->drawBadge($this->quantity),
+            "discount" => $this->getDiscount()
         ];
         return $cardItem;
 
