@@ -13,7 +13,7 @@ $movies = Movie::fetchAll();
                 </h2>
                 <div class="row px-5 pt-2 ">
                     <?php foreach ($movies as $movie) {
-                        echo $movie->cardPrinter($movie->formatCard());
+                        $movie->cardPrinter($movie->formatCard());
                     } ?>
                 </div>
             </div>

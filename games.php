@@ -13,7 +13,7 @@ $games = Game::fetchAll();
                 </h2>
                 <div class="row px-5 pt-2">
                     <?php foreach ($games as $game) {
-                        echo $game->cardPrinter($game->formatCard());
+                        $game->cardPrinter($game->formatCard());
                     } ?>
                 </div>
             </div>

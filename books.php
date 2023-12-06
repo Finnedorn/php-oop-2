@@ -13,7 +13,7 @@ $books = Book::fetchAll();
                 </h2>
                 <div class="row px-5 pt-2">
                     <?php foreach ($books as $book) {
-                        echo $book->cardPrinter($book->formatCard());
+                        $book->cardPrinter($book->formatCard());
                     } ?>
                 </div>
             </div>
