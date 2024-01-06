@@ -14,7 +14,8 @@ trait DrawCard {
         //e tradurlo così da mandarlo associarlo alla card
         extract($item);
         //come fa la funzione a stmpare la card nell'index se non ritorna alcun valore o non associa il contenuto di card ad una var?
-        //il comando include automaticamente da il comando di stampa alla funzione pertanto non necessita di dichiarare il contenuto della card nè in una var ne di conseguenza di returnarlo!!!
+        //il comando include automaticamente da il comando di stampa alla funzione pertanto non necessita di dichiarare
+        //il contenuto della card nè in una var ne di conseguenza di returnarlo!!!
         include __DIR__ ."/../views/partials/card.php";
     }
 
